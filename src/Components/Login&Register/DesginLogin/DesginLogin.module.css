@@ -1,0 +1,193 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../Components//Pictures/Logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 1;
+}
+.container {
+  z-index: 5;
+  width: 75%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../../../Components/Pictures/Logo.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards span {
+  font-family: "Times New Roman", Times, serif;
+}
+.cards h2 {
+  font-size: 40px;
+}
+.container .card:nth-child(1) {
+  width: 565px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 150px;
+  padding: 50px;
+  color: #fff;
+}
+.card .detalis {
+  width: auto;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+.card .detalis h1 {
+  font-size: 45px;
+  margin: 0;
+}
+.detalis h1,
+h2,
+h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 20px;
+}
+.detalis p {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.card .detalis .icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  height: 15%;
+  align-items: center;
+}
+.icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+/* Here for 2nd Cart Have elements Form Input */
+.card:nth-child(2) {
+  height: 100%;
+  width: 450px;
+}
+/* Here for Hover */
+.icons a:hover {
+  transition: 0.4s;
+  transform: rotate(360deg);
+}
+
+/* Here Animation & Style for Profile */
+.profile {
+  position: fixed;
+  top: -50%;
+  width: 20%;
+  height: 20%;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  transition: 1s;
+}
+.top {
+  top: 0;
+  transition: 1s;
+}
+.profile .bar {
+  height: 50%;
+  width: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.bar p {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: -30%;
+}
+
+.info h2 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .text {
+  display: flex;
+  gap: 10px;
+}
+.info .text button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .parent {
+    height: auto;
+  }
+  .container {
+    height: auto;
+  }
+  .card {
+    width: 100% !important;
+  }
+  .profile {
+    width: auto !important;
+  }
+}
+@media (max-width: 425px) {
+  .parent {
+    height: auto;
+  }
+  .container {
+    height: auto;
+    width: 100% !important;
+    padding-top: 70px;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
